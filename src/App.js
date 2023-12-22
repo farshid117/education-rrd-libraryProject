@@ -31,7 +31,9 @@ function App() {
             path='*'
             element={
               <main className='mt-5 bg-light mx-auto w-50 rounded-3 '>
-                <h1 className="text-center text-danger mt-3 fw-bold">گشتم نبود نگرد نیست</h1>
+                <h1 className="text-center text-danger mt-3 fw-bold">
+                  گشتم نبود نگرد نیست
+                </h1>
               </main>
             }
           />

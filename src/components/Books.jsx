@@ -23,7 +23,7 @@ const Books = () => {
     if (filterText) {
       setSearchParams({ filterText: filterText });
     } else {
-      setSearchParams({ filterText: "" });
+      setSearchParams({  });
     }
   };
 
@@ -59,10 +59,10 @@ const Books = () => {
             let name = book.name.toLowerCase();
             return name.includes(filterText.toLowerCase());
           })
-          .map((book, index) => (
+          .map((book) => (
             <NavLink
               to={`/books/${book.number}${location.search}`}
-              key={index}
+              key={book.number}
               className='btn d-block btn-lg text-center w-50 mx-4 my-2 '
               style={({ isActive }) => {
                 return {
